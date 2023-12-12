@@ -12,11 +12,9 @@ class Admin extends Model
     protected $table = 'admins';
 
     protected $fillable = [
-        'name',
-        'gender',
-        'phone_number',
-        'matric_number',
-        'address',
-        'age',
+        'username',
+        'password',
+        'role',
+        'email',
     ];
 }
