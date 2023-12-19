@@ -12,6 +12,7 @@ class Ticket extends Model
     protected $fillable = [
         'cust_id',
         'ticket_type',
+        'quantity',
         'purchase_date',
         'validity_start',
         'validity_end',
