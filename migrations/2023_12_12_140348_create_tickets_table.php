@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id('id');
             $table ->bigInteger('cust_id') ->unsigned();
             $table->enum('ticket_type', ['adult', 'child','baby']);
+            $table->integer('quantity');
             $table->dateTime('purchase_date');
             $table->dateTime('validity_start');
             $table->dateTime('validity_end');
