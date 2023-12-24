@@ -11,6 +11,7 @@ class Ticket extends Model
     protected $table='tickets';
     protected $fillable = [
         'cust_id',
+        'serial_number',
         'ticket_type',
         'quantity',
         'purchase_date',
