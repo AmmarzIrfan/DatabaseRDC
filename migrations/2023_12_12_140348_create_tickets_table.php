@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id('id');
             $table ->bigInteger('cust_id') ->unsigned();
+            $table->string('serial_number')->unique();
             $table->enum('ticket_type', ['adult', 'child','baby']);
             $table->integer('quantity');
             $table->dateTime('purchase_date');
