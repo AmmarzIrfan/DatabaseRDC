@@ -28,6 +28,6 @@ class Ticket extends Model
     }
     public function accesslog()
     {
-        return $this->hasMany(AccessLog::class, 'ticket_id', 'id');
+        return $this->hasOne(AccessLog::class, 'ticket_id', 'id');
     }
     }
