@@ -21,7 +21,7 @@ class VisitorProfile extends Model
 
     public function ticket()
     {
-        return $this->hasOne(Ticket::class, 'cust_id', 'id');
+        return $this->hasMany(Ticket::class, 'cust_id', 'id');
     }
     public function accesslog()
     {
